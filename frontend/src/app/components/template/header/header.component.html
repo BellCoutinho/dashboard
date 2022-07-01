@@ -1,0 +1,17 @@
+<mat-toolbar class="header mat-elevation-z6"color="primary">
+  <button mat-icon-button (click)="buttonMenuToggle()">
+    <mat-icon *ngIf="!isOpen">
+      menu
+    </mat-icon>
+    <mat-icon *ngIf="isOpen">
+      close
+    </mat-icon>
+  </button>
+  <!--
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  -->
+  <span>Dashbord</span>
+<!-- <span class="example-spacer"></span> -->
+</mat-toolbar>

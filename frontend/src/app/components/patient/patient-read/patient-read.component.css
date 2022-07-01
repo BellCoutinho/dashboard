@@ -1,0 +1,32 @@
+.image-container {
+  height: 25%;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.image-left {
+  float: left;
+  margin-right: 5%;
+}
+.image-right {
+  float: right;
+  margin-left: 5%;
+}
+.info-container {
+  height: 70%;
+  margin-top: 15%;
+  overflow: auto;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  width: 50%;
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+

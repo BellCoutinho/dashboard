@@ -1,0 +1,81 @@
+<section class="image-container">
+  <mat-card class="example-card" mat-elevation-z0>
+    <div class="image-left">
+        <!-- <img mat-card-xl-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" > -->
+        <img mat-card-xl-image src="data:image/png;base64,{{ processingImage.image64 }}" >
+    </div>
+    <div class="image-right">
+        <img mat-card-xl-image src="data:image/jpg;base64,{{ lastImage.image64 }}" >
+    </div>
+    <mat-card-content>
+    </mat-card-content>
+    <div class="clear"></div>
+  </mat-card>
+
+</section>
+<section class="info-container">
+  <div class="clear"></div>
+  <mat-card>
+    <mat-card-title>Paciente</mat-card-title>
+    <mat-card-subtitle>{{ patient.name }}</mat-card-subtitle>
+    <div>
+      <div class="left">
+        <span>
+          <mat-card-title>Telefone</mat-card-title>
+          <mat-card-subtitle>{{ patient.phone_number }}</mat-card-subtitle>
+        </span>
+      </div>
+      <div class="right">
+        <span>
+          <mat-card-title>CPF</mat-card-title>
+          <mat-card-subtitle>{{ patient.cpf }}</mat-card-subtitle>
+        </span>
+      </div>
+    </div>
+    <div class="clear"></div>
+    <br>
+  </mat-card>
+  <br>
+  <mat-card>
+    <div>
+      <div class="left">
+        <span>
+          <mat-card-title>Doctor</mat-card-title>
+          <mat-card-subtitle>{{ doctor.name }}</mat-card-subtitle>
+        </span>
+      </div>
+      <div class="right">
+        <span>
+          <mat-card-title>CRM</mat-card-title>
+          <mat-card-subtitle>{{ doctor.crm }}</mat-card-subtitle>
+        </span>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </mat-card>
+  <br>
+  <mat-card>
+    <div>
+      <div class="left">
+        <span>
+          <mat-card-title>Data</mat-card-title>
+          <mat-card-subtitle>{{ record.date }}</mat-card-subtitle>
+        </span>
+      </div>
+      <div class="right">
+        <span>
+          <mat-card-title>Hora</mat-card-title>
+          <mat-card-subtitle>{{ record.time }}</mat-card-subtitle>
+        </span>
+      </div>
+    </div>
+    <div class="clear"></div>
+    <mat-card-title class="left">Descrição</mat-card-title>
+    <div class="clear"></div>
+    <mat-card-subtitle class="left">
+      {{ record.medical_notes }}
+    </mat-card-subtitle>
+    <div class="clear"></div>
+  </mat-card>
+  <br>
+</section>
