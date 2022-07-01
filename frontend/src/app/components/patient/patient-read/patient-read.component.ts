@@ -76,9 +76,11 @@ export class PatientReadComponent implements OnInit {
       this.lastImage = image
       this.lastImage.image64 = this.lastImage.image64.slice(2,-1)
     })
+    /*
     this.imageService.processing(this.lastImage.id.toString()).subscribe(image => {
       this.processingImage = image
       console.log(this.processingImage)
     })
+    */
   }
 }
